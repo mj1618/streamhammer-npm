@@ -1,11 +1,5 @@
 let userApiKey = '';
 
-export interface IPublishEvent {
-  collectionId: string;
-  streamId: string;
-  data: any;
-}
-
 export interface IStoreEventResponse {
   eventId: string;
 }
@@ -26,7 +20,7 @@ export const streamhammer = () => {
     setApiKey: (apiKey: string): void => {
       userApiKey = apiKey;
     },
-    storeEvent: async (event: IPublishEvent) => {
+    storeEvent: async (collectionId: string, streamId: string, data: any) => {
       const shResponse = await fetch('https://streamhammer.io/api/stream', {
         method: 'post',
         body: JSON.stringify(event),
