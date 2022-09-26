@@ -24,7 +24,7 @@ export const streamhammer = {
   storeEvent: async (collectionId: string, streamId: string, data: any) => {
     const shResponse = await fetch('https://streamhammer.io/api/stream', {
       method: 'post',
-      body: JSON.stringify(event),
+      body: JSON.stringify({ collectionId, streamId, data }),
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${userApiKey}`,
