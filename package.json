@@ -1,6 +1,6 @@
 {
   "name": "streamhammer",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A client for the serverless stream database streamhammer.io",
   "main": "./lib/src/index.js",
   "files": [
@@ -48,6 +48,7 @@
   "devDependencies": {
     "@types/jest": "^27.5.2",
     "@types/node": "^12.20.11",
+    "@types/node-fetch": "^2.6.2",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
