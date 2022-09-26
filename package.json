@@ -1,7 +1,7 @@
 {
-  "name": "typescript-npm-package-template",
-  "version": "0.0.0-development",
-  "description": "A template for creating npm packages using TypeScript and VSCode",
+  "name": "streamhammer",
+  "version": "1.0.0",
+  "description": "A client for the serverless stream database streamhammer.io",
   "main": "./lib/src/index.js",
   "files": [
     "lib/**/*"
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryansonshine/typescript-npm-package-template.git"
+    "url": "git+https://github.com/mj1618/streamhammer-npm.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Ryan Sonshine",
-    "email": "ryansonshine@users.noreply.github.com",
-    "url": "https://github.com/ryansonshine"
+    "name": "Matt James",
+    "email": "mj1618@users.noreply.github.com",
+    "url": "https://github.com/mj1618"
   },
   "engines": {
     "node": ">=12.0"
@@ -42,12 +42,10 @@
     "codecov"
   ],
   "bugs": {
-    "url": "https://github.com/ryansonshine/typescript-npm-package-template/issues"
+    "url": "https://github.com/mj1618/streamhammer-npm/issues"
   },
-  "homepage": "https://github.com/ryansonshine/typescript-npm-package-template#readme",
+  "homepage": "https://streamhammer.io",
   "devDependencies": {
-    "@ryansonshine/commitizen": "^4.2.8",
-    "@ryansonshine/cz-conventional-changelog": "^3.3.4",
     "@types/jest": "^27.5.2",
     "@types/node": "^12.20.11",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
@@ -68,7 +66,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
+      "path": "./node_modules/@mj1618/cz-conventional-changelog"
     }
   },
   "lint-staged": {
@@ -118,5 +116,8 @@
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.10"
   }
 }
