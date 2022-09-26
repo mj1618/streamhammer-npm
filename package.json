@@ -1,6 +1,6 @@
 {
   "name": "streamhammer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A client for the serverless stream database streamhammer.io",
   "main": "./lib/src/index.js",
   "files": [
